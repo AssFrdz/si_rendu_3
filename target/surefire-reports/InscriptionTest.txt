@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: InscriptionTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 100.887 s <<< FAILURE! - in InscriptionTest
-InscriptionTest.ajouterInscriptionShouldWork  Time elapsed: 50.381 s  <<< ERROR!
+Tests run: 10, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 101.104 s <<< FAILURE! - in InscriptionTest
+InscriptionTest.ajouterInscriptionShouldWork  Time elapsed: 50.475 s  <<< ERROR!
 com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:115)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
