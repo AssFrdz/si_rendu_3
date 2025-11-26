@@ -22,6 +22,14 @@ public class InscriptionDAO {
         this.cn.setAutoCommit(false);
     }
 
+    public void setAutoCommit(boolean v) throws SQLException{
+        this.cn.setAutoCommit(v);
+    }
+
+    public void rollback() throws SQLException{
+        this.cn.rollback();
+    }
+
     public InscriptionDAO(Connection cn){
         this.cn = cn;
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="GestionUniversitaireInscriptionTest" time="0.387" tests="5" errors="2" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="test.java.com.example.enseignements.GestionUniversitaireEnseignementCRUDTest" time="0.007" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -56,53 +56,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAjouterInscription" classname="GestionUniversitaireInscriptionTest" time="0.038">
-    <error message="Cannot invoke &quot;main.java.com.example.model.Etudiant.getId()&quot; because the return value of &quot;main.java.com.example.model.Inscription.getEtudiant()&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "main.java.com.example.model.Etudiant.getId()" because the return value of "main.java.com.example.model.Inscription.getEtudiant()" is null
-	at main.java.com.example.dao.InscriptionDAO.save(InscriptionDAO.java:252)
-	at GestionUniversitaireInscriptionTest.testAjouterInscription(GestionUniversitaireInscriptionTest.java:88)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-    <system-out><![CDATA[Etudiant saved successfully with ID: 13
-Enseignement saved successfully with ID: 1031
-]]></system-out>
-  </testcase>
-  <testcase name="testRechercherInscriptionParNom" classname="GestionUniversitaireInscriptionTest" time="0.013">
-    <failure message="La recherche par nom devrait retourner des résultats ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: La recherche par nom devrait retourner des résultats ==> expected: <false> but was: <true>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
-	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
-	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:235)
-	at GestionUniversitaireInscriptionTest.testRechercherInscriptionParNom(GestionUniversitaireInscriptionTest.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="testModifierInscription" classname="GestionUniversitaireInscriptionTest" time="0.003">
-    <failure message="expected: not &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: not <null>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
-	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
-	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:30)
-	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:300)
-	at GestionUniversitaireInscriptionTest.testModifierInscription(GestionUniversitaireInscriptionTest.java:111)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
-  <testcase name="testAfficherToutesInscriptions" classname="GestionUniversitaireInscriptionTest" time="0.003"/>
-  <testcase name="testSupprimerInscription" classname="GestionUniversitaireInscriptionTest" time="0.005">
-    <error message="Aucune inscription trouvée avec l&apos;ID : 833" type="java.sql.SQLException"><![CDATA[java.sql.SQLException: Aucune inscription trouvée avec l'ID : 833
-	at main.java.com.example.dao.InscriptionDAO.delete(InscriptionDAO.java:309)
-	at GestionUniversitaireInscriptionTest.testSupprimerInscription(GestionUniversitaireInscriptionTest.java:122)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-  </testcase>
+  <testcase name="ajouterEnseignement_ShouldPrintSuccessMessage" classname="test.java.com.example.enseignements.GestionUniversitaireEnseignementCRUDTest" time="0.001"/>
+  <testcase name="modifierEnseignement_ShouldHandleInvalidId" classname="test.java.com.example.enseignements.GestionUniversitaireEnseignementCRUDTest" time="0.001"/>
+  <testcase name="afficherCours_ShouldPrintEmptyListMessage" classname="test.java.com.example.enseignements.GestionUniversitaireEnseignementCRUDTest" time="0"/>
+  <testcase name="rechercherCoursParIntitule_ShouldHandleEmptyResult" classname="test.java.com.example.enseignements.GestionUniversitaireEnseignementCRUDTest" time="0"/>
+  <testcase name="supprimerEnseignement_ShouldCancelDeletion" classname="test.java.com.example.enseignements.GestionUniversitaireEnseignementCRUDTest" time="0"/>
 </testsuite>

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: GestionUniversitaireInscriptionTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 0.351 s <<< FAILURE! - in GestionUniversitaireInscriptionTest
-GestionUniversitaireInscriptionTest.testAjouterInscription  Time elapsed: 0.03 s  <<< ERROR!
+Tests run: 5, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 0.387 s <<< FAILURE! - in GestionUniversitaireInscriptionTest
+GestionUniversitaireInscriptionTest.testAjouterInscription  Time elapsed: 0.038 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "main.java.com.example.model.Etudiant.getId()" because the return value of "main.java.com.example.model.Inscription.getEtudiant()" is null
 	at main.java.com.example.dao.InscriptionDAO.save(InscriptionDAO.java:252)
 	at GestionUniversitaireInscriptionTest.testAjouterInscription(GestionUniversitaireInscriptionTest.java:88)
@@ -10,7 +10,7 @@ java.lang.NullPointerException: Cannot invoke "main.java.com.example.model.Etudi
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-GestionUniversitaireInscriptionTest.testRechercherInscriptionParNom  Time elapsed: 0.006 s  <<< FAILURE!
+GestionUniversitaireInscriptionTest.testRechercherInscriptionParNom  Time elapsed: 0.013 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: La recherche par nom devrait retourner des résultats ==> expected: <false> but was: <true>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -22,7 +22,7 @@ org.opentest4j.AssertionFailedError: La recherche par nom devrait retourner des 
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-GestionUniversitaireInscriptionTest.testModifierInscription  Time elapsed: 0 s  <<< FAILURE!
+GestionUniversitaireInscriptionTest.testModifierInscription  Time elapsed: 0.003 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: not <null>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -35,8 +35,8 @@ org.opentest4j.AssertionFailedError: expected: not <null>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-GestionUniversitaireInscriptionTest.testSupprimerInscription  Time elapsed: 0.004 s  <<< ERROR!
-java.sql.SQLException: Aucune inscription trouvée avec l'ID : 1000
+GestionUniversitaireInscriptionTest.testSupprimerInscription  Time elapsed: 0.005 s  <<< ERROR!
+java.sql.SQLException: Aucune inscription trouvée avec l'ID : 833
 	at main.java.com.example.dao.InscriptionDAO.delete(InscriptionDAO.java:309)
 	at GestionUniversitaireInscriptionTest.testSupprimerInscription(GestionUniversitaireInscriptionTest.java:122)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)

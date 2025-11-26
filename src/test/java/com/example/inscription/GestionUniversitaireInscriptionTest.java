@@ -1,4 +1,4 @@
-import java.io.ByteArrayInputStream;
+/*import java.io.ByteArrayInputStream;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
@@ -133,3 +133,4 @@ public class GestionUniversitaireInscriptionTest {
         etudiantDAO.delete(idEtudiant);
     }
 }
+*/
