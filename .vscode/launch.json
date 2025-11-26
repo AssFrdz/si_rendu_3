@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "type": "java",
+        "name": "TestJDBC",
+        "request": "launch",
+        "mainClass": "main.java.com.example.jdbc.TestJDBC",
+        "projectName": "tp-univ_aac91cc9"
+    },
+    {
+        "type": "java",
+        "name": "TestJDBC",
+        "request": "launch",
+        "mainClass": "main.java.com.example.jdbc.TestJDBC",
+        "projectName": "tp-univ_3b9c4afc"
+    },
+    {
+        "type": "java",
+        "name": "Run TestJDBC",
+        "request": "launch",
+        "mainClass": "package main.java.com.example.jdbc.TestJDBC",
+        "classPaths": [
+            "${workspaceFolder}/bin",
+            "${workspaceFolder}/resources",
+            "${workspaceFolder}/lib/mysql-connector-j-9.3.0.jar"
+        ]
+    }
+]
+}

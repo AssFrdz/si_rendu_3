@@ -1,0 +1,5 @@
+GestionUniversitaireNoteCRUDTest.class
+GestionUniversitaireSalleCRUDTest.class
+GestionUniversitaireEnseignementCRUDTest.class
+GestionUniversitaireInscriptionTest.class
+GestionUniversitaireReservationCRUDTest.class
