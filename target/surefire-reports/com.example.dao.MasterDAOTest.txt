@@ -1,0 +1,100 @@
+-------------------------------------------------------------------------------
+Test set: com.example.dao.MasterDAOTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.082 s <<< FAILURE! - in com.example.dao.MasterDAOTest
+com.example.dao.MasterDAOTest.testSaveAndFindById  Time elapsed: 0.032 s  <<< ERROR!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: 
+NULL non permis pour la colonne "MASTER_ID"
+NULL not allowed for column "MASTER_ID"; SQL statement:
+INSERT INTO Master (Nom_Master, Responsable_ID, Departement_ID) VALUES (?, ?, ?) [23502-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365)
+	at org.h2.table.Table.convertInsertRow(Table.java:936)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at com.example.dao.MasterDAO.save(MasterDAO.java:54)
+	at com.example.dao.MasterDAOTest.testSaveAndFindById(MasterDAOTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.example.dao.MasterDAOTest.testUpdate  Time elapsed: 0.01 s  <<< ERROR!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: 
+NULL non permis pour la colonne "MASTER_ID"
+NULL not allowed for column "MASTER_ID"; SQL statement:
+INSERT INTO Master (Nom_Master, Responsable_ID, Departement_ID) VALUES (?, ?, ?) [23502-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365)
+	at org.h2.table.Table.convertInsertRow(Table.java:936)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at com.example.dao.MasterDAO.save(MasterDAO.java:54)
+	at com.example.dao.MasterDAOTest.testUpdate(MasterDAOTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.example.dao.MasterDAOTest.testDelete  Time elapsed: 0.007 s  <<< ERROR!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: 
+NULL non permis pour la colonne "MASTER_ID"
+NULL not allowed for column "MASTER_ID"; SQL statement:
+INSERT INTO Master (Nom_Master, Responsable_ID, Departement_ID) VALUES (?, ?, ?) [23502-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365)
+	at org.h2.table.Table.convertInsertRow(Table.java:936)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at com.example.dao.MasterDAO.save(MasterDAO.java:54)
+	at com.example.dao.MasterDAOTest.testDelete(MasterDAOTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.example.dao.MasterDAOTest.testFindAll  Time elapsed: 0.004 s  <<< ERROR!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: 
+NULL non permis pour la colonne "MASTER_ID"
+NULL not allowed for column "MASTER_ID"; SQL statement:
+INSERT INTO Master (Nom_Master, Responsable_ID, Departement_ID) VALUES (?, ?, ?) [23502-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365)
+	at org.h2.table.Table.convertInsertRow(Table.java:936)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at com.example.dao.MasterDAO.save(MasterDAO.java:54)
+	at com.example.dao.MasterDAOTest.testFindAll(MasterDAOTest.java:87)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
